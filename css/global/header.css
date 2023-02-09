@@ -24,25 +24,22 @@
 .header-menu a {
   display: inline-block;
   padding: 16px 0px;
-  font-size: 18px;
   position: relative;
-  font-family: 'Poppins';
-  font-weight: 400;
 }
 
 .header-menu a:after {
-  content: '';
-  position: absolute;
+  content: "";
   display: block;
   height: 2px;
   width: 0px;
   background: var(--cor-0);
   margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
 }
 
 .header-menu a:hover:after {
   width: 100%;
-  transition: 0.3s;
 }
 
 @media (max-width: 800px) {
@@ -55,7 +52,7 @@
     border-radius: 4px;
   }
   .header-menu a:hover {
-    background: var(--cor-10);
+    background-color: var(--cor-10);
   }
   .header a:after {
     display: none;
