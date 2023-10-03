@@ -1,5 +1,5 @@
 .bicicletas-bg {
-  background-image: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0);
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
 }
 
 .bicicletas {
@@ -8,6 +8,7 @@
   gap: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
+  background: url("../../img/dec/top-right.svg") no-repeat top 40px right 20px;
 }
 
 .bicicletas-imagem {
@@ -15,34 +16,34 @@
 }
 
 .bicicletas-imagem img {
-  grid-area: 1 / 1;
+  grid-area: 1/1;
 }
 
 .bicicletas-imagem span {
+  grid-area: 1/1;
   place-self: start end;
   margin-top: 20px;
-  grid-area: 1 / 1;
-  display: inline-block;
-  border-radius: 4px 0 0 4px;
   background: var(--cor-12);
+  display: inline-block;
   padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
 }
 
 .bicicletas-conteudo {
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: start;
-  align-content: start;
 }
 
 .bicicletas h2,
 .bicicletas p {
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
 }
 
 .bicicletas h2 {
   margin-bottom: 20px;
 }
+
 .bicicletas h2::before {
   content: "";
   display: block;
@@ -60,15 +61,14 @@
   place-self: end;
 }
 
-.bicicletas ul {
-  display: grid;
-  gap: 16px;
-}
-
 .bicicletas li {
   display: flex;
   align-items: center;
-  gap: 8px;
+}
+
+.bicicletas ul {
+  display: grid;
+  gap: 16px;
 }
 
 .bicicletas-conteudo img {

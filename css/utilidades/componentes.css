@@ -17,6 +17,8 @@
   color: var(--cor-p5);
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {
@@ -43,8 +45,8 @@
   width: 18px;
   height: 10px;
   margin-left: 12px;
-  background: url(../../img/icones/seta.svg);
-  transition: transform .2s;
+  background: url("../../img/icones/seta.svg");
+  transition: transform 0.2s;
 }
 
 .botao.seta:hover::after {
@@ -77,13 +79,15 @@
   color: var(--cor-0);
 }
 
-
-/* titulos paginas internas */
-
+/* titulo internas */
 .titulo-bg {
-  background-color: var(--cor-11);
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--cor-11);
+}
+
+.titulo {
+  background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
 }
 
 .titulo p {
