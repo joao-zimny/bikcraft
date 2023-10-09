@@ -8,7 +8,6 @@ function ativarLink(link) {
         link.classList.add('ativo');
     }
 }
-
 links.forEach(ativarLink);
 
 // Ativar itens do orçamento
